@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "checks": [
+    {
+      "id": "lan-audit",
+      "cadence": "daily",
+      "description": "Run a basic read-only network audit and compare inventory drift."
+    },
+    {
+      "id": "host-health",
+      "cadence": "weekly",
+      "description": "Collect a baseline host health snapshot for the operator workstation."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "devices": [
+    {
+      "ip": "10.0.0.1",
+      "hostname": "edge-router",
+      "role": "router",
+      "management": ["ssh", "web"],
+      "notes": "Primary example edge device."
+    },
+    {
+      "ip": "10.0.0.10",
+      "hostname": "core-host",
+      "role": "virtualization-host",
+      "management": ["ssh"],
+      "notes": "Main compute host in the example environment."
+    },
+    {
+      "ip": "10.0.0.20",
+      "hostname": "wifi-ap",
+      "role": "access-point",
+      "management": ["ssh", "web"],
+      "notes": "Example wireless infrastructure device."
+    },
+    {
+      "ip": "10.0.0.30",
+      "hostname": "ops-laptop",
+      "role": "operator-client",
+      "management": ["rdp", "ssh"],
+      "notes": "Example operator workstation."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "id": "example-network-upgrade",
+      "status": "active",
+      "path": "notes/projects/_example-project.md",
+      "summary": "Example tracked project for a network or infrastructure change."
+    }
+  ]
+}

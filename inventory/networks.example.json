@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "networks": [
+    {
+      "name": "main-lan",
+      "cidr": "10.0.0.0/24",
+      "gateway": "10.0.0.1",
+      "purpose": "Primary client and infrastructure LAN"
+    },
+    {
+      "name": "management",
+      "cidr": "10.0.10.0/24",
+      "gateway": "10.0.10.1",
+      "purpose": "Optional dedicated management segment"
+    }
+  ]
+}

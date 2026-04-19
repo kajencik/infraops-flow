@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "shares": [
+    {
+      "name": "backup",
+      "path": "\\example-host\\backup",
+      "purpose": "Infrastructure backups"
+    },
+    {
+      "name": "media",
+      "path": "\\example-host\\media",
+      "purpose": "Non-critical shared media"
+    }
+  ]
+}
