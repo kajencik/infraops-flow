@@ -1,6 +1,6 @@
 # Scripts
 
-Public-safe script logic should live here.
+This is where the repo stops talking about operations and starts doing small, useful pieces of it.
 
 Guidelines:
 
@@ -9,4 +9,8 @@ Guidelines:
 - treat write actions as explicit and reviewable
 - separate reusable helpers into `scripts/lib/`
 
-This initial scaffold does not yet include live scripts; it defines the layout and conventions first.
+Good scripts in this repo should feel boring in the best way: readable, parameterized, and unlikely to surprise an operator at 23:40.
+
+Current script:
+
+- `host-health.ps1` collects a read-only Windows host snapshot without assuming anything about the rest of the environment.

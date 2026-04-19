@@ -1,11 +1,11 @@
 # Monitoring Container
 
-Use this area for future containerized monitoring examples that remain safe to publish.
+Use this area for containerized monitoring examples and scheduled checks.
 
 Examples that belong here:
 
 - example compose files
-- public-safe environment templates
+- environment templates
 - generic container documentation
 
-Real hostnames, mount paths, and private keys should stay in a paired private repo.
+This folder exists for the operators who want repeatable packaging without committing to a cathedral of orchestration just to run a few useful checks on a schedule.

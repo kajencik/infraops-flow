@@ -8,4 +8,4 @@ Use them to support:
 - recurring checks
 - lightweight automation
 
-Keep the public repo example-driven and keep real environment data private.
+This is the quiet utility layer of the repo: not glamorous, but very good at preventing "I thought we tracked that somewhere" moments.
