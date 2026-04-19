@@ -2,32 +2,46 @@
   "schemaVersion": 1,
   "devices": [
     {
-      "ip": "10.0.0.1",
+      "ip": "192.168.50.1",
       "hostname": "edge-router",
       "role": "router",
       "management": ["ssh", "web"],
-      "notes": "Primary example edge device."
+      "notes": "Main LAN gateway and the first device the operator finally documented properly."
     },
     {
-      "ip": "10.0.0.10",
-      "hostname": "core-host",
+      "ip": "192.168.50.10",
+      "hostname": "mini-pc-1",
       "role": "virtualization-host",
       "management": ["ssh"],
-      "notes": "Main compute host in the example environment."
+      "notes": "Primary small virtualization host carrying the useful services that started as side projects and became dependencies."
     },
     {
-      "ip": "10.0.0.20",
-      "hostname": "wifi-ap",
+      "ip": "192.168.50.20",
+      "hostname": "nas-1",
+      "role": "storage",
+      "management": ["ssh", "web", "smb"],
+      "notes": "Backup and shared-storage target, promoted from "I should organize that later" to an actual tracked system."
+    },
+    {
+      "ip": "192.168.50.30",
+      "hostname": "ap-1",
       "role": "access-point",
       "management": ["ssh", "web"],
-      "notes": "Example wireless infrastructure device."
+      "notes": "Main wireless access point. Formerly "the Wi-Fi box," now a documented device with a role."
     },
     {
-      "ip": "10.0.0.30",
+      "ip": "192.168.50.40",
+      "hostname": "home-automation-1",
+      "role": "automation-host",
+      "management": ["ssh", "web"],
+      "notes": "Small service host that only becomes memorable when it fails during a normal evening."
+    },
+    {
+      "ip": "192.168.50.90",
       "hostname": "ops-laptop",
       "role": "operator-client",
       "management": ["rdp", "ssh"],
-      "notes": "Example operator workstation."
+      "notes": "The operator workstation where notes, checks, and slightly more disciplined decisions finally come together."
     }
   ]
 }

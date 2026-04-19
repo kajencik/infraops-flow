@@ -2,10 +2,10 @@
 
 This directory is the ledger of things with names, addresses, roles, and a habit of misbehaving at inconvenient times.
 
-Use it for example inventories and for shaping the schema you want in a real instance.
+In the sample environment, this is where the operator finally stopped saying things like "the small box near the router" and started writing down what each system actually is.
 
-- `devices.example.json` shows how to describe hosts without turning the file into a novel
-- `networks.example.json` keeps the important network facts in one place
-- `fileshares.example.json` is for the storage paths you will forget right before you need them
+- `devices.example.json` introduces the cast: `edge-router`, `mini-pc-1`, `nas-1`, `ap-1`, `home-automation-1`, and `ops-laptop`
+- `networks.example.json` shows the main LAN and the small management network the operator eventually decided was worth the effort
+- `fileshares.example.json` shows where backups and operational exports landed after they were rescued from random workstation paths
 
 Keep the schema stable, keep the examples readable, and resist the urge to make inventory files look like an accidental CMDB.

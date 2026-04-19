@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "shares": [
     {
-      "name": "backup",
-      "path": "\\example-host\\backup",
-      "purpose": "Infrastructure backups"
+      "name": "ops-backups",
+      "path": "\\nas-1\\ops-backups",
+      "purpose": "Backups for operator devices and exported service snapshots"
     },
     {
-      "name": "media",
-      "path": "\\example-host\\media",
-      "purpose": "Non-critical shared media"
+      "name": "shared-config",
+      "path": "\\nas-1\\shared-config",
+      "purpose": "Operational exports, reference docs, and the files that used to be scattered across desktops"
     }
   ]
 }

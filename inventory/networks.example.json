@@ -3,15 +3,15 @@
   "networks": [
     {
       "name": "main-lan",
-      "cidr": "10.0.0.0/24",
-      "gateway": "10.0.0.1",
-      "purpose": "Primary client and infrastructure LAN"
+      "cidr": "192.168.50.0/24",
+      "gateway": "192.168.50.1",
+      "purpose": "Primary client and infrastructure LAN where the important household services actually live"
     },
     {
       "name": "management",
-      "cidr": "10.0.10.0/24",
-      "gateway": "10.0.10.1",
-      "purpose": "Optional dedicated management segment"
+      "cidr": "192.168.60.0/24",
+      "gateway": "192.168.60.1",
+      "purpose": "Small management segment for the devices the operator wants reachable even when the main LAN is being reworked"
     }
   ]
 }

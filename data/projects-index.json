@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "projects": [
     {
-      "id": "example-network-upgrade",
+      "id": "backup-target-cleanup",
       "status": "active",
       "path": "notes/projects/_example-project.md",
-      "summary": "Example tracked project for a network or infrastructure change."
+      "summary": "Move backups and operational exports onto nas-1 so the environment stops depending on forgotten desktop paths."
     }
   ]
 }

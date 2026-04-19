@@ -2,18 +2,22 @@
 
 ## What Finished
 
-- Completed a read-only infrastructure check.
-- Verified one concrete configuration fact.
+- Ran the regular read-only checks against the small lab.
+- Confirmed the core devices still match the documented inventory.
+- Found one remaining bit of old chaos: a backup export still writing to the wrong place.
 
 ## Verified Findings
 
-- The edge router is reachable over SSH.
-- The virtualization host answered a basic health probe.
+- `edge-router` answered over SSH and still owns the main LAN gateway.
+- `mini-pc-1` answered the usual management probe.
+- `nas-1` is reachable and the `ops-backups` share is available.
+- One older export job is still targeting a path on `ops-laptop` instead of `nas-1`.
 
 ## What Remains Open
 
-- Confirm backup freshness.
-- Review firewall rules for stale allow entries.
+- Move the remaining export job onto `nas-1`.
+- Verify that the old desktop path is no longer referenced anywhere.
+- Update the project note after the migration is tested once.
 
 ## Default Restart Path
 

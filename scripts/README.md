@@ -2,6 +2,8 @@
 
 This is where the repo stops talking about operations and starts doing small, useful pieces of it.
 
+In the sample environment, scripts are the modest part of the system: they support the operator, they do not pretend to replace them.
+
 Guidelines:
 
 - keep environment-specific values out of the script body
@@ -9,7 +11,7 @@ Guidelines:
 - treat write actions as explicit and reviewable
 - separate reusable helpers into `scripts/lib/`
 
-Good scripts in this repo should feel boring in the best way: readable, parameterized, and unlikely to surprise an operator at 23:40.
+Good scripts in this repo should feel boring in the best way: readable, parameterized, and unlikely to surprise an operator at 23:40, especially when the rest of the environment is already generating enough noise on its own.
 
 Current script:
 

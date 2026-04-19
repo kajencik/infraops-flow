@@ -2,14 +2,19 @@
   "schemaVersion": 1,
   "checks": [
     {
-      "id": "lan-audit",
-      "cadence": "daily",
-      "description": "Run a basic read-only network audit and compare inventory drift."
+      "id": "core-lan-check",
+      "cadence": "twice weekly",
+      "description": "Confirm edge-router, mini-pc-1, nas-1, and ap-1 are reachable and still match the documented environment."
     },
     {
       "id": "host-health",
       "cadence": "weekly",
-      "description": "Collect a baseline host health snapshot for the operator workstation."
+      "description": "Collect a read-only health snapshot from ops-laptop before small problems become a full evening project."
+    },
+    {
+      "id": "backup-target-review",
+      "cadence": "weekly",
+      "description": "Check that current backups and exported configs are landing on nas-1 rather than on whichever machine happened to be convenient last month."
     }
   ]
 }

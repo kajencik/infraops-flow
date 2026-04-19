@@ -8,4 +8,10 @@ Use them to support:
 - recurring checks
 - lightweight automation
 
-This is the quiet utility layer of the repo: not glamorous, but very good at preventing "I thought we tracked that somewhere" moments.
+In the sample environment, this is where the operator turned vague intentions into tracked work:
+
+- recurring checks that happen on purpose
+- active projects that do not vanish into terminal scrollback
+- lightweight structured data that makes the notes easier to trust
+
+This is the quiet utility layer of the repo: not glamorous, but very good at turning faint signals into something you can actually trace later.

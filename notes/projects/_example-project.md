@@ -2,19 +2,21 @@
 
 ## Goal
 
-Describe the target outcome in one or two sentences.
+Move backups and operational exports away from ad hoc paths on the operator workstation and onto `nas-1`, so the environment has one predictable storage target instead of accumulated convenience decisions.
 
 ## Current Status
 
-- One verified fact.
-- One active blocker or risk.
+- `nas-1` is reachable and the intended share path exists.
+- One legacy export still points at a local desktop path, which makes restore assumptions harder to trust.
 
 ## Evidence
 
-- Add exact command output summaries, versions, or observations.
+- Recent session check confirmed `nas-1` is online and reachable from `ops-laptop`.
+- One export task still references the old path and needs to be moved deliberately, not by wishful thinking.
 
 ## Next Actions
 
-1. Perform the next read-only verification step.
-2. Prepare the change plan.
-3. Record rollback or recovery notes before execution.
+1. Inventory every current backup and export target.
+2. Move the remaining legacy export to `\\nas-1\\ops-backups`.
+3. Run one verification cycle and confirm the new target contains the expected files.
+4. Retire the old path only after the new target is proven.
