@@ -11,6 +11,9 @@
 
 - Framework files belong here.
 - Real inventories, secrets, logs, exports, and dated private session notes do not.
+- Session files under `sessions/<contributor>/` are the exception: dated session logs *are* meant to be committed,
+  because they are the shared coordination layer between contributors.
+  Keep session content factual and public-safe (no secrets, no IPs outside the example environment).
 
 ## Style
 
