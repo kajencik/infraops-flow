@@ -1,0 +1,13 @@
+provider_label   = "generic-cloud"
+region           = "region-a"
+environment_name = "cloud-wg-spokes"
+
+spoke_nodes = {
+  "test-spoke-node" = {
+    instance_class  = "small-test-vm"
+    image_label     = "linux-cloud-image"
+    private_address = "10.40.1.10"
+    public_exposure = "no-direct-public-exposure"
+    role            = "wireguard-spoke"
+  }
+}

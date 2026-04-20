@@ -60,6 +60,8 @@ Small always-on VMs used for VPN, backup relays, lightweight automation, remote 
 
 Document why a provider or instance class is being used, not just the current price. Cheap infrastructure is only useful if the operator can still explain its purpose later.
 
+Keep one explicit cost model close to the project, even if it is simple and manually maintained. A small script-driven monthly check is often enough to catch the more common failure mode: not runaway hyperscaler spend, but quiet drift where the operator can no longer explain why the current cloud shape still deserves its monthly cost.
+
 ### State and Lifecycle Boundaries
 
 Separate stable core infrastructure from disposable test nodes, short-lived spokes, and experiments. The notes should make it obvious which things are safe to recreate and which are carrying real responsibility.
@@ -71,8 +73,11 @@ Treat `terraform apply` as the midpoint, not the finish line. The useful end sta
 ## Suggested Artifacts
 
 - inventory entries for cloud assets and public endpoints
+- inventory entries for applications, the servers they run on, and their dependencies
 - recurring checks for reachability, service status, and drift review
 - a project note describing provider choice, lifecycle split, and current operating model
+- a small cost-check profile and script output summarizing the current monthly model
+- a provider-neutral Terraform scaffold that separates long-lived core resources from disposable spoke resources
 - short dated session notes when a plan, cutover, or recovery event materially changes the state
 - script outputs or summaries that help the assistant compare intended state to live evidence
 
@@ -90,5 +95,14 @@ Start with one small cloud pattern, not a multi-provider platform:
 
 - Use `notes/projects/observability-and-automation.md` for the recurring-check model.
 - Use `notes/projects/change-management-and-risky-ops.md` when a Terraform or cloud change can affect real access, routing, or recovery.
+
+Public scaffold location:
+
+- `terraform-example/README.md`
+- `terraform-example/stacks/generic-cloud/core/`
+- `terraform-example/stacks/generic-cloud/spokes/`
+- `terraform-example/modules/generic-utility-node/`
+- `terraform-example/modules/generic-network-appliance/`
+- `inventory/service-topology.example.json`
 
 This note is the bridge between those two ideas: operational evidence on one side, infrastructure intent on the other.

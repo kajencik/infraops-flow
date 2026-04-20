@@ -42,6 +42,8 @@ The example files in this repo describe one small environment:
 - `home-automation-1` is the little box everyone forgets until it goes offline
 - `ops-laptop` is where the operator actually does the work
 
+The cloud examples add one more layer: not just servers, but also what runs on them and what depends on what.
+
 The operator did not begin with a beautiful system. They began with:
 
 - device names scattered across notes and terminal history
@@ -63,6 +65,7 @@ Codex Hermes is the version after that operator got tired of operating by folklo
 - `data/` — recurring checks and project indexes, so the operator stops relying on vibes and starts seeing drift sooner
 - `notes/` — session continuity, project notes, and the paper trail of how the environment became more legible
 - `scripts/` — small tools for read-heavy operational work and carefully explicit write actions
+- `terraform-example/` — provider-neutral Terraform scaffold for generic cloud utility-node and network-appliance planning
 - `monitoring-container/` — container packaging for people who want scheduled checks without turning the repo into a platform religion
 - `.vscode/` — optional tasks and editor support for the people living in VS Code all day anyway
 
@@ -80,11 +83,12 @@ The same structure can also carry a small cloud/Terraform direction: cloud asset
 If you want the shortest path to understanding the repo, follow this order:
 
 1. `inventory/devices.example.json`
-2. `data/recurring-checks.json`
-3. `notes/_example-session.md`
-4. `notes/projects/_example-project.md`
-5. `scripts/host-health.ps1`
-6. `scripts/network-audit-example.ps1`
+2. `inventory/service-topology.example.json`
+3. `data/recurring-checks.json`
+4. `notes/_example-session.md`
+5. `notes/projects/_example-project.md`
+6. `scripts/host-health.ps1`
+7. `scripts/network-audit-example.ps1`
 
 That path shows the real point of the repo: inventory, recurring checks, active work, session continuity, and a few small tools to separate signal from noise.
 

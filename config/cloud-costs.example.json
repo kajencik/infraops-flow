@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "profileName": "generic-cloud-wg-lab",
+  "currency": "EUR",
+  "monthlyBudget": 25.0,
+  "outputs": {
+    "writeReport": true,
+    "reportPath": "logs/cloud-cost-check-example.json"
+  },
+  "assumptions": [
+    "This is a modeled monthly cost profile, not a live billing export.",
+    "Core resources are expected to remain online continuously.",
+    "Spoke and test resources should be treated as disposable and reviewed frequently.",
+    "Network-appliance and IP-line items are generic placeholders for provider-specific equivalents."
+  ],
+  "resources": [
+    {
+      "name": "cloud-hub-node",
+      "category": "compute",
+      "lifecycle": "core",
+      "quantity": 1,
+      "unitMonthlyCost": 4.5,
+      "notes": "Small always-on utility VM for WireGuard and remote admin access."
+    },
+    {
+      "name": "hub-storage",
+      "category": "storage",
+      "lifecycle": "core",
+      "quantity": 1,
+      "unitMonthlyCost": 3.0,
+      "notes": "Attached storage for configuration, logs, and small operational artifacts."
+    },
+    {
+      "name": "public-ip-or-ingress",
+      "category": "network",
+      "lifecycle": "core",
+      "quantity": 1,
+      "unitMonthlyCost": 1.5,
+      "notes": "Generic placeholder for public IP, reserved address, or ingress service cost."
+    },
+    {
+      "name": "virtual-network-appliance",
+      "category": "network-appliance",
+      "lifecycle": "core",
+      "quantity": 1,
+      "unitMonthlyCost": 6.0,
+      "notes": "Generic cost placeholder for a managed or self-hosted network/security appliance role."
+    },
+    {
+      "name": "test-spoke-node",
+      "category": "compute",
+      "lifecycle": "spoke",
+      "quantity": 1,
+      "unitMonthlyCost": 4.0,
+      "notes": "Disposable test node for validation, narrow experiments, or spoke connectivity checks."
+    },
+    {
+      "name": "backup-egress-reserve",
+      "category": "transfer",
+      "lifecycle": "ops",
+      "quantity": 1,
+      "unitMonthlyCost": 2.5,
+      "notes": "Simple allowance for backup export, retrieval, or transfer overhead."
+    }
+  ]
+}

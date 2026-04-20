@@ -12,6 +12,11 @@
       "description": "Review the current cloud utility-node direction against asset inventory, recent monitoring evidence, and the current Terraform stack inputs or plan output before making changes."
     },
     {
+      "id": "cloud-cost-check-example",
+      "cadence": "weekly or after topology changes",
+      "description": "Run the generic cloud-cost check against the current modeled resource profile so cost assumptions stay visible alongside Terraform and monitoring evidence."
+    },
+    {
       "id": "network-audit-example",
       "cadence": "daily or after changes",
       "description": "Run the config-driven network-audit example to confirm core host reachability and capture a small JSON snapshot before drift turns into guesswork."

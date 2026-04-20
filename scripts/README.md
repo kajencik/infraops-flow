@@ -21,3 +21,4 @@ Current scripts:
 
 - `host-health.ps1` collects a read-only Windows host snapshot without assuming anything about the rest of the environment.
 - `network-audit-example.ps1` shows a small config-driven reachability check with optional JSON snapshot and history output.
+- `cloud-cost-check-example.ps1` shows a small config-driven monthly cloud-cost review for generic utility-node and network-appliance planning.
