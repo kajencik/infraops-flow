@@ -42,6 +42,34 @@
       "role": "operator-client",
       "management": ["rdp", "ssh"],
       "notes": "The operator workstation where notes, checks, and slightly more disciplined decisions finally come together."
+    },
+    {
+      "ip": "10.40.0.1",
+      "hostname": "cloud-edge-appliance",
+      "role": "network-appliance",
+      "management": ["ssh", "web"],
+      "notes": "Generic cloud edge or ingress role used by the public cloud example."
+    },
+    {
+      "ip": "10.40.0.10",
+      "hostname": "app-server-a",
+      "role": "application-server",
+      "management": ["ssh"],
+      "notes": "Application-tier Linux VM for the generic cloud service-topology example."
+    },
+    {
+      "ip": "10.40.0.20",
+      "hostname": "db-server-a",
+      "role": "database-server",
+      "management": ["ssh"],
+      "notes": "Shared database server used by both the browser-facing and desktop application examples."
+    },
+    {
+      "ip": "10.40.0.30",
+      "hostname": "static-web-c",
+      "role": "static-web-server",
+      "management": ["ssh", "web"],
+      "notes": "Public-facing Linux VM serving a static site in the generic cloud example."
     }
   ]
 }

@@ -5,6 +5,7 @@ This directory is the ledger of things with names, addresses, roles, and a habit
 In the sample environment, this is where the operator finally stopped saying things like "the small box near the router" and started writing down what each system actually is.
 
 - `devices.example.json` introduces the cast: `edge-router`, `mini-pc-1`, `nas-1`, `ap-1`, `home-automation-1`, and `ops-laptop`
+- `devices.example.json` now also includes the generic cloud-side hosts used by the public Terraform and service-topology examples: `cloud-edge-appliance`, `app-server-a`, `db-server-a`, and `static-web-c`
 - `networks.example.json` shows the main LAN and the small management network the operator eventually decided was worth the effort
 - `fileshares.example.json` shows where backups and operational exports landed after they were rescued from random workstation paths
 - `service-topology.example.json` shows how servers, applications, and dependencies can be modeled together, including shared database use and simple static-site hosting

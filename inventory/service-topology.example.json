@@ -31,7 +31,7 @@
       "role": "static-web-server",
       "environment": "generic-cloud-core",
       "platform": "linux-vm",
-      "notes": "Small Linux VM that serves a static site without an application or database tier."
+      "notes": "Public-facing Linux VM that serves a static site without an application or database tier."
     }
   ],
   "applications": [

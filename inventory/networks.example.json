@@ -12,6 +12,18 @@
       "cidr": "192.168.60.0/24",
       "gateway": "192.168.60.1",
       "purpose": "Small management segment for the devices the operator wants reachable even when the main LAN is being reworked"
+    },
+    {
+      "name": "generic-cloud-core",
+      "cidr": "10.40.0.0/24",
+      "gateway": "10.40.0.1",
+      "purpose": "Generic cloud core segment used by the public Terraform and service-topology examples"
+    },
+    {
+      "name": "generic-cloud-spokes",
+      "cidr": "10.40.1.0/24",
+      "gateway": "10.40.1.1",
+      "purpose": "Generic disposable spoke or test-node segment used by the public Terraform example"
     }
   ]
 }

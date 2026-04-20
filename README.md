@@ -44,6 +44,8 @@ The example files in this repo describe one small environment:
 
 The cloud examples add one more layer: not just servers, but also what runs on them and what depends on what.
 
+Those cloud examples now also include a small public-facing Linux VM pattern for simple static content or lightweight public workloads.
+
 The operator did not begin with a beautiful system. They began with:
 
 - device names scattered across notes and terminal history

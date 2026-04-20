@@ -23,6 +23,22 @@ module "hub_node" {
   tags               = local.common_tags
 }
 
+module "public_web_node" {
+  source = "../../../modules/generic-utility-node"
+
+  name               = var.public_web_node_name
+  role               = "public-web-server"
+  provider_label     = var.provider_label
+  region             = var.region
+  instance_class     = var.public_web_instance_class
+  image_label        = var.public_web_image_label
+  private_address    = var.public_web_private_address
+  public_exposure    = var.exposure_strategy
+  bootstrap_template = "../../../templates/cloud-init-wireguard-node.yaml.tftpl"
+  lifecycle_boundary = "core"
+  tags               = merge(local.common_tags, { service = "static-web" })
+}
+
 module "network_appliance" {
   source = "../../../modules/generic-network-appliance"
 

@@ -41,7 +41,7 @@ terraform-example/
 ## Design notes
 
 - `modules/` contains provider-neutral module interfaces.
-- `stacks/generic-cloud/core/` models the long-lived utility node and network-appliance role.
+- `stacks/generic-cloud/core/` models the long-lived utility node, network-appliance role, and a public-facing Linux VM for simple static-site or edge-adjacent hosting.
 - `stacks/generic-cloud/spokes/` models disposable spoke or test nodes that should be easy to replace.
 - `templates/` holds bootstrap text that a real provider-specific stack could pass into cloud-init or an equivalent initialization path.
 
@@ -64,7 +64,7 @@ The matching inventory example models a small cloud application shape:
 
 - `Eshop App A` runs on an application server and depends on a database server
 - `Desktop App B` talks directly to the same database server
-- `Static Page C` is served directly from a small Linux VM
+- `Static Page C` is served directly from a public-facing Linux VM
 
 That gives Hermes a concrete relation map between infrastructure assets and application behavior.
 

@@ -33,6 +33,26 @@ variable "hub_private_address" {
   description = "Modeled private address of the hub node."
 }
 
+variable "public_web_node_name" {
+  type        = string
+  description = "Logical name of the public-facing Linux VM used for static web or simple edge-adjacent workloads."
+}
+
+variable "public_web_instance_class" {
+  type        = string
+  description = "Generic VM class label for the public-facing Linux VM."
+}
+
+variable "public_web_image_label" {
+  type        = string
+  description = "Generic image label for the public-facing Linux VM bootstrap path."
+}
+
+variable "public_web_private_address" {
+  type        = string
+  description = "Modeled private address of the public-facing Linux VM."
+}
+
 variable "network_appliance_name" {
   type        = string
   description = "Logical name of the generic network appliance role."

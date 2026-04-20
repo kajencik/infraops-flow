@@ -56,6 +56,8 @@ That sequence gives the assistant enough context to help without pretending that
 
 Small always-on VMs used for VPN, backup relays, lightweight automation, remote admin access, or narrow supporting services.
 
+That can include a simple public-facing Linux VM when the workload does not need a full application tier, for example a static site, status page, lightweight documentation host, or other low-complexity public endpoint.
+
 ### Cost and Provider Direction
 
 Document why a provider or instance class is being used, not just the current price. Cheap infrastructure is only useful if the operator can still explain its purpose later.
@@ -104,5 +106,7 @@ Public scaffold location:
 - `terraform-example/modules/generic-utility-node/`
 - `terraform-example/modules/generic-network-appliance/`
 - `inventory/service-topology.example.json`
+
+The current public example explicitly includes a public-facing Linux VM role in the core stack so the static-site/server pattern is not left implicit.
 
 This note is the bridge between those two ideas: operational evidence on one side, infrastructure intent on the other.
