@@ -5,6 +5,7 @@
 - Ran the regular read-only checks against the small lab.
 - Confirmed the core devices still match the documented inventory.
 - Found one remaining bit of old chaos: a backup export still writing to the wrong place.
+- Reduced the next restart from "figure out what this machine is doing again" to one concrete storage-migration task.
 
 ## Verified Findings
 
@@ -12,6 +13,8 @@
 - `mini-pc-1` answered the usual management probe.
 - `nas-1` is reachable and the `ops-backups` share is available.
 - One older export job is still targeting a path on `ops-laptop` instead of `nas-1`.
+
+The useful outcome is not just the check itself. It is that the boring evidence collection is now out of the human's head and into a repeatable session trail.
 
 ## What Remains Open
 

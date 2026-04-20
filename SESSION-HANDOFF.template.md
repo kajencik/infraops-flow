@@ -6,7 +6,7 @@
 - What was last verified by an actual check?
 - What is still assumed, inherited, or suspiciously under-documented?
 
-The point of this file is to make the next session start from known state instead of vague memory.
+The point of this file is to make the next session start from known state instead of vague memory, terminal archaeology, and guesswork.
 
 ## Verified Findings
 
@@ -25,6 +25,8 @@ Treat this as the signal section, not the speculation section.
 1. Read this file.
 2. Read the relevant project note under `notes/projects/`.
 3. Continue from the last verified checkpoint.
+
+If this file is doing its job, a restart that used to take an hour of reorientation should take minutes.
 
 ## Example Use
 

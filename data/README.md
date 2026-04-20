@@ -15,3 +15,5 @@ In the sample environment, this is where the operator turned vague intentions in
 - lightweight structured data that makes the notes easier to trust
 
 This is the quiet utility layer of the repo: not glamorous, but very good at turning faint signals into something you can actually trace later.
+
+This is also where the LLM becomes useful without becoming magical. Structured files make the boring work easier to update, check, compare, and carry forward across sessions.

@@ -1,28 +1,25 @@
 # Codex Hermes
 
-An LLM-assisted operations notebook for human operators.
+An LLM-assisted operations notebook for (mostly) human operators.
 
 ## What This Is
 
-Codex Hermes is an operations notebook for the operator who started with a pile of remembered IPs, half-finished migrations, old forum tabs, weak signals, and a strong belief that they would document it properly later.
+Codex Hermes is an operations notebook for the operator who started with remembered IPs, half-finished migrations, old forum tabs, and a strong belief that the documentation cleanup would happen later.
 
-The public repo is built around a dummy environment and a very ordinary story:
+It is built around a simple story:
 
 - one operator
-- a small mixed homelab
+- one small mixed environment
 - a few recurring checks
 - a few active projects
-- a transition from improvised notes to controlled, productive chaos
+- a shift from improvised memory to deliberate, script-assisted operations
 
-It combines:
+The point is not to build an autonomous empire. The point is to spend less human time on re-finding facts, re-running boring checks, and re-learning last week's context.
 
-- structured inventories
-- session handoff notes
-- reusable runbooks
-- example data files
-- small helper scripts
+The human should spend time on judgment, priorities, tradeoffs, and risky decisions.
+The LLM should spend time on the boring parts: organizing notes, updating structured files, drafting runbooks, and carrying context across sessions.
 
-The goal is simple: show how an operator can move from "I know roughly how this works" to "I can stop for a week, come back, follow the traces, and still know what is true."
+This repo shows how to move from "I think I know how this works" to "I can stop for a week, come back, and still know what is true."
 
 ## Design Principles
 
@@ -32,10 +29,11 @@ The goal is simple: show how an operator can move from "I know roughly how this 
 - Markdown and machine-readable files complement each other.
 - Safe templates are first-class, not afterthoughts.
 - Good operations depend on known state, not folklore.
+- The system should reduce operator drag, not create a second job in documentation.
 
 ## The Sample Environment
 
-The example files in this repo all describe the same small environment:
+The example files in this repo describe one small environment:
 
 - `edge-router` keeps the main LAN honest
 - `mini-pc-1` runs the main virtual workloads
@@ -44,14 +42,17 @@ The example files in this repo all describe the same small environment:
 - `home-automation-1` is the little box everyone forgets until it goes offline
 - `ops-laptop` is where the operator actually does the work
 
-The operator did not begin with a beautiful system.
-
-They began with:
+The operator did not begin with a beautiful system. They began with:
 
 - device names scattered across notes and terminal history
 - backup jobs that mostly worked, until they did not
 - maintenance tasks remembered by mood rather than by cadence
 - changes that were obvious at the time and mysterious two weeks later
+
+Two example story lines matter here:
+
+- networking changes that once took a week of scattered checking can be prepared and driven in a day once the state, runbook, and validation path are explicit
+- workstation file cleanup that once felt like random reordering turns into a priority decision once the operator separates what is merely messy from what is actually important
 
 Codex Hermes is the version after that operator got tired of operating by folklore, noise, and half-visible traces.
 
@@ -59,8 +60,8 @@ Codex Hermes is the version after that operator got tired of operating by folklo
 
 - `config/` — where knobs, paths, and secret references learn some manners
 - `inventory/` — the cast list for the sample environment: hosts, networks, shares, and the other named troublemakers
-- `data/` — recurring checks and project indexes for that same environment, so the operator stops relying on vibes and starts seeing drift sooner
-- `notes/` — session continuity, project notes, and the paper trail showing how the environment became less improvised and more legible
+- `data/` — recurring checks and project indexes, so the operator stops relying on vibes and starts seeing drift sooner
+- `notes/` — session continuity, project notes, and the paper trail of how the environment became more legible
 - `scripts/` — small tools for read-heavy operational work and carefully explicit write actions
 - `monitoring-container/` — container packaging for people who want scheduled checks without turning the repo into a platform religion
 - `.vscode/` — optional tasks and editor support for the people living in VS Code all day anyway
@@ -89,3 +90,9 @@ That path shows the real point of the repo: inventory, recurring checks, active 
 This repo is the framework, not your entire living environment frozen in Git.
 
 Treat it as the reusable layer: the part worth keeping tidy enough that another operator could read it without needing a guided tour of your network closet.
+
+If it is working properly, the repo does three things:
+
+- reduces the amount of boring work the human has to repeat
+- makes interruptions less expensive
+- lets the operator spend more time on productive changes than on reconstruction of context

@@ -4,6 +4,8 @@ This is where the repo stops talking about operations and starts doing small, us
 
 In the sample environment, scripts are the modest part of the system: they support the operator, they do not pretend to replace them.
 
+That matters. The goal is not to automate everything. The goal is to let the human spend less time on repetitive collection, checking, and reshaping of boring inputs.
+
 Guidelines:
 
 - keep environment-specific values out of the script body
@@ -11,7 +13,9 @@ Guidelines:
 - treat write actions as explicit and reviewable
 - separate reusable helpers into `scripts/lib/`
 
-Good scripts in this repo should feel boring in the best way: readable, parameterized, and unlikely to surprise an operator at 23:40, especially when the rest of the environment is already generating enough noise on its own.
+Good scripts in this repo should feel boring in the best way: readable, parameterized, and unlikely to surprise an operator at 23:40.
+
+They are how a week of scattered re-checking starts turning into a day with a known run path.
 
 Current script:
 

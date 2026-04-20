@@ -4,10 +4,14 @@
 
 Move backups and operational exports away from ad hoc paths on the operator workstation and onto `nas-1`, so the environment has one predictable storage target instead of accumulated convenience decisions.
 
+This is not just file reordering. It is a priority correction: stop spending effort on the most visible mess first and start with the things that matter for restore confidence and operational trust.
+
 ## Current Status
 
 - `nas-1` is reachable and the intended share path exists.
 - One legacy export still points at a local desktop path, which makes restore assumptions harder to trust.
+
+This is a small example of the wider pattern in the repo: once the important path is visible, the work gets shorter, less emotional, and easier to script.
 
 ## Evidence
 
