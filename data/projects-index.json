@@ -2,6 +2,24 @@
   "schemaVersion": 1,
   "projects": [
     {
+      "id": "cloud-and-terraform-operations",
+      "status": "active",
+      "path": "notes/projects/cloud-and-terraform-operations.md",
+      "summary": "Keep cloud assets, Terraform intent, recurring validation, and change evidence close enough together that the assistant can reason across all of them safely."
+    },
+    {
+      "id": "change-management-and-risky-ops",
+      "status": "active",
+      "path": "notes/projects/change-management-and-risky-ops.md",
+      "summary": "Use staged change, explicit validation, and pre-written rollback when a task can affect live access, routing, storage, or service ownership."
+    },
+    {
+      "id": "observability-and-automation",
+      "status": "active",
+      "path": "notes/projects/observability-and-automation.md",
+      "summary": "Turn recurring checks into structured evidence, small deterministic summaries, and approval-gated follow-up instead of repeated manual reconstruction."
+    },
+    {
       "id": "backup-target-cleanup",
       "status": "active",
       "path": "notes/projects/_example-project.md",

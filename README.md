@@ -1,6 +1,6 @@
 # Codex Hermes
 
-An LLM-assisted operations notebook for (mostly) human operators.
+An LLM-assisted operations notebook for (mostly) human operators. Recommended usecase is to be extremely lazy and not to read anything below, just ask your favorite LLM to summarize and continue in the direction of this repo. It needs to be able to browse and expand the whole repository, like Github copilot does, copy and past approach most likely won't work.
 
 ## What This Is
 
@@ -66,6 +66,8 @@ Codex Hermes is the version after that operator got tired of operating by folklo
 - `monitoring-container/` — container packaging for people who want scheduled checks without turning the repo into a platform religion
 - `.vscode/` — optional tasks and editor support for the people living in VS Code all day anyway
 
+The same structure can also carry a small cloud/Terraform direction: cloud assets in inventory, recurring validation in data/scripts, and project notes that explain why the infrastructure exists and how it should be changed.
+
 ## Quick Start
 
 1. Copy the `*.example.json` files into instance-specific files.
@@ -82,6 +84,7 @@ If you want the shortest path to understanding the repo, follow this order:
 3. `notes/_example-session.md`
 4. `notes/projects/_example-project.md`
 5. `scripts/host-health.ps1`
+6. `scripts/network-audit-example.ps1`
 
 That path shows the real point of the repo: inventory, recurring checks, active work, session continuity, and a few small tools to separate signal from noise.
 

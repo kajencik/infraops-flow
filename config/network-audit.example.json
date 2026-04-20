@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "profileName": "small-lab-core",
+  "defaultPorts": [22, 80, 443],
+  "probe": {
+    "tcpTimeoutMs": 300
+  },
+  "outputs": {
+    "writeSnapshot": true,
+    "snapshotPath": "logs/network-audit-example.json",
+    "writeHistory": true,
+    "historyPath": "logs/network-audit-history.example.json"
+  },
+  "hosts": [
+    {
+      "name": "edge-router",
+      "address": "192.168.50.1",
+      "expectedRole": "router",
+      "ports": [22, 80, 443],
+      "tags": ["core", "network"]
+    },
+    {
+      "name": "mini-pc-1",
+      "address": "192.168.50.10",
+      "expectedRole": "virtualization-host",
+      "ports": [22],
+      "tags": ["core", "compute"]
+    },
+    {
+      "name": "nas-1",
+      "address": "192.168.50.20",
+      "expectedRole": "storage",
+      "ports": [22, 80, 443],
+      "tags": ["core", "storage", "backup"]
+    },
+    {
+      "name": "ap-1",
+      "address": "192.168.50.30",
+      "expectedRole": "access-point",
+      "ports": [22, 80, 443],
+      "tags": ["network", "wifi"]
+    }
+  ]
+}

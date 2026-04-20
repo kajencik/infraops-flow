@@ -17,3 +17,10 @@ The notes are where weak intuitions become known state, and where long messy tas
 Current reusable note:
 
 - `notes/projects/change-management-and-risky-ops.md` captures a general cutover/rollback method for risky infrastructure work.
+- `notes/projects/observability-and-automation.md` captures the model for recurring checks, structured evidence, and approval-gated follow-up.
+- `notes/projects/cloud-and-terraform-operations.md` captures the cloud/IaC direction where asset state, monitoring evidence, and Terraform intent stay usable together for the assistant.
+
+Current example sessions:
+
+- `notes/2026-04-20-change-management-session.md` shows how a risky change can be prepared without turning the session into a memory dump.
+- `notes/2026-04-20-monitoring-session.md` shows the shift from ad hoc checks to repeatable collection.

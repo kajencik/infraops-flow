@@ -17,6 +17,7 @@ Good scripts in this repo should feel boring in the best way: readable, paramete
 
 They are how a week of scattered re-checking starts turning into a day with a known run path.
 
-Current script:
+Current scripts:
 
 - `host-health.ps1` collects a read-only Windows host snapshot without assuming anything about the rest of the environment.
+- `network-audit-example.ps1` shows a small config-driven reachability check with optional JSON snapshot and history output.
