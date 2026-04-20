@@ -64,12 +64,16 @@ Codex Hermes is the version after that operator got tired of operating by folklo
 
 - `config/` — where knobs, paths, and secret references learn some manners
 - `inventory/` — the cast list for the sample environment: hosts, networks, shares, and the other named troublemakers
+- `applications/` — service and application documentation: what runs, where, and what it depends on
 - `data/` — recurring checks and project indexes, so the operator stops relying on vibes and starts seeing drift sooner
 - `notes/` — session continuity, project notes, and the paper trail of how the environment became more legible
 - `scripts/` — small tools for read-heavy operational work and carefully explicit write actions
+- `sessions/` — personal session history for each contributor; shared layers cover the environment, session files cover the person
 - `terraform-example/` — provider-neutral Terraform scaffold for generic cloud utility-node and network-appliance planning
 - `monitoring-container/` — container packaging for people who want scheduled checks without turning the repo into a platform religion
 - `.vscode/` — optional tasks and editor support for the people living in VS Code all day anyway
+
+See `TEAM-STATUS.md` for a one-line summary of each contributor's current focus and open items.
 
 The same structure can also carry a small cloud/Terraform direction: cloud assets in inventory, recurring validation in data/scripts, and project notes that explain why the infrastructure exists and how it should be changed.
 
