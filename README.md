@@ -1,10 +1,10 @@
-# Codex Hermes
+# InfraOps Flow
 
 An LLM-assisted operations notebook for (mostly) human operators. Recommended usecase is to be extremely lazy and not to read anything below, just ask your favorite LLM to summarize and continue in the direction of this repo. It needs to be able to browse and expand the whole repository, like Github copilot does, copy and past approach most likely won't work.
 
 ## What This Is
 
-Codex Hermes is an operations notebook for the operator who started with remembered IPs, half-finished migrations, old forum tabs, and a strong belief that the documentation cleanup would happen later.
+InfraOps Flow is an operations notebook for the operator who started with remembered IPs, half-finished migrations, old forum tabs, and a strong belief that the documentation cleanup would happen later.
 
 It is built around a simple story:
 
@@ -58,7 +58,7 @@ Two example story lines matter here:
 - networking changes that once took a week of scattered checking can be prepared and driven in a day once the state, runbook, and validation path are explicit
 - workstation file cleanup that once felt like random reordering turns into a priority decision once the operator separates what is merely messy from what is actually important
 
-Codex Hermes is the version after that operator got tired of operating by folklore, noise, and half-visible traces.
+InfraOps Flow is the version after that operator got tired of operating by folklore, noise, and half-visible traces.
 
 ## Repository Layout
 

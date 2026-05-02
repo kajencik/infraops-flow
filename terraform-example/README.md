@@ -9,7 +9,7 @@ It is intentionally generic:
 - no private IP plan from a live environment
 - no secret values
 
-The point is to show a usable shape for Hermes-assisted work, not to publish a fake one-click deployment.
+The point is to show a usable shape for InfraOps Flow-assisted work, not to publish a fake one-click deployment.
 
 ## Why this exists
 
@@ -47,7 +47,7 @@ terraform-example/
 
 The module implementations use `terraform_data` so the example stays valid and inspectable without pretending to be a real cloud provider deployment. Replace those resources with provider-specific resources when adapting the scaffold.
 
-## Hermes fit
+## InfraOps Flow fit
 
 This folder is meant to work alongside:
 
@@ -66,7 +66,7 @@ The matching inventory example models a small cloud application shape:
 - `Desktop App B` talks directly to the same database server
 - `Static Page C` is served directly from a public-facing Linux VM
 
-That gives Hermes a concrete relation map between infrastructure assets and application behavior.
+That gives InfraOps Flow a concrete relation map between infrastructure assets and application behavior.
 
 ## First adaptation path
 

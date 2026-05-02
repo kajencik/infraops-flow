@@ -10,7 +10,7 @@ Extend the operations notebook beyond local assets so the same assistant can rea
 
 The point is not to turn Terraform into a monitoring system or to turn inventory into state files. The point is to keep asset knowledge, recurring checks, and infrastructure intent close enough together that the operator and the assistant can move from evidence to change safely.
 
-## Why This Fits Hermes
+## Why This Fits InfraOps Flow
 
 Small environments drift in predictable ways:
 
@@ -19,7 +19,7 @@ Small environments drift in predictable ways:
 - costs are technically low, but the repo does not explain why the node exists anymore
 - a Terraform change is ready to apply, but there is no attached validation or rollback note
 
-Hermes is useful when it keeps those threads joined.
+InfraOps Flow is useful when it keeps those threads joined.
 
 ## Core Model
 
