@@ -1,0 +1,15 @@
+# awesome-copilot local mirror index (optional)
+#
+# Purpose:
+# - Fast, small index for Copilot-related advisory retrieval.
+# - Search this file first, then open only the specific mirrored file needed.
+#
+# Format (one entry per line):
+# <topic-keywords> | <relative-path>
+#
+# Examples:
+# prompts, prompt-engineering, examples | external/awesome-copilot/prompts/README.md
+# agents, custom-agent, workflow | external/awesome-copilot/agents/guide.md
+# vscode-extension, setup, tools | external/awesome-copilot/vscode/setup.md
+#
+# Add your real entries below this line.

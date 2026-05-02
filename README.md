@@ -78,6 +78,18 @@ See `TEAM-STATUS.md` for a one-line summary of each contributor's current focus 
 
 The same structure can also carry a small cloud/Terraform direction: cloud assets in inventory, recurring validation in data/scripts, and project notes that explain why the infrastructure exists and how it should be changed.
 
+## Optional Advisory Layer
+
+If you keep a local mirror of awesome-copilot materials in your instance repo, use it as advisory context for Copilot-specific workflow questions (prompts, agents, skills, extension choices, model/tool usage patterns).
+
+Recommended retrieval pattern:
+
+1. Search a cached index first (for example `data/external/awesome-copilot/llms.txt`).
+2. Open only the narrow file that answers the immediate question.
+3. Keep repository facts (inventory, notes, data JSON) as the source of truth for your environment.
+
+This keeps external best-practice context available without bloating every session or mixing generic advice with environment state.
+
 ## Quick Start
 
 1. Copy the `*.example.json` files into instance-specific files.

@@ -17,6 +17,8 @@ This repository is a reusable operations-notebook framework. It is template-firs
 - Keep Markdown guidance and JSON companion data aligned when both represent the same operational concept.
 - Prefer small, reviewable changes and explicit migration notes over broad restructuring.
 - Distinguish verified behavior from proposed roadmap items.
+- When user requests involve Copilot usage patterns, prompts, agents, skills, VS Code AI workflow, or tool-selection guidance, automatically check awesome-copilot reference content first when it exists in this repo (prefer a cached index file such as `data/external/awesome-copilot/llms.txt`, then open only the narrow file needed).
+- Treat awesome-copilot as advisory context, not source-of-truth project state. Do not replace repository-specific facts with external guidance.
 
 ## Repository Layout
 

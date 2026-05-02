@@ -43,3 +43,9 @@ Once the JSON structure is stable and the file volume grows enough that raw file
 
 That is a follow-up step, not a starting requirement. The JSON files are the product; an MCP server is one possible query interface over them.
 
+## External advisory references
+
+If your instance includes a local awesome-copilot mirror, keep its compact index under `data/external/awesome-copilot/llms.txt` (or an equivalent small index file). For Copilot-specific questions, query that index first and then open only the specific mirrored file you need.
+
+Use this as advisory context only. Environment truth still lives in this repository's own inventory, notes, and data files.
+
