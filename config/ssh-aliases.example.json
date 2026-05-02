@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "aliases": [
+    {
+      "name": "router",
+      "host": "10.0.0.1",
+      "user": "admin",
+      "keyPath": "~/.ssh/id_example_router",
+      "notes": "Example router alias for documentation and bootstrap guidance."
+    },
+    {
+      "name": "core-host",
+      "host": "10.0.0.10",
+      "user": "operator",
+      "keyPath": "~/.ssh/id_example_core",
+      "notes": "Example infrastructure host."
+    }
+  ]
+}

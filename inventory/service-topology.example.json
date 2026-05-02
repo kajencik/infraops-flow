@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "servers": [
+    {
+      "id": "cloud-edge-appliance",
+      "hostname": "cloud-edge-appliance",
+      "role": "network-appliance",
+      "environment": "generic-cloud-core",
+      "platform": "virtual-network-appliance",
+      "notes": "Generic edge or ingress role that sits in front of the application-facing servers."
+    },
+    {
+      "id": "app-server-a",
+      "hostname": "app-server-a",
+      "role": "application-server",
+      "environment": "generic-cloud-core",
+      "platform": "linux-vm",
+      "notes": "Primary application host for a browser-facing line-of-business workload."
+    },
+    {
+      "id": "db-server-a",
+      "hostname": "db-server-a",
+      "role": "database-server",
+      "environment": "generic-cloud-core",
+      "platform": "linux-vm",
+      "notes": "Shared database host used by multiple applications with different access patterns."
+    },
+    {
+      "id": "static-web-c",
+      "hostname": "static-web-c",
+      "role": "static-web-server",
+      "environment": "generic-cloud-core",
+      "platform": "linux-vm",
+      "notes": "Public-facing Linux VM that serves a static site without an application or database tier."
+    }
+  ],
+  "applications": [
+    {
+      "id": "eshop-app-a",
+      "name": "Eshop App A",
+      "kind": "web-application",
+      "entrypoint": "https://shop.example.invalid",
+      "runsOn": ["app-server-a"],
+      "dependsOnServers": ["db-server-a"],
+      "dependsOnApplications": [],
+      "notes": "Typical browser-facing application with a separate application and database layer."
+    },
+    {
+      "id": "desktop-app-b",
+      "name": "Desktop App B",
+      "kind": "desktop-application",
+      "entrypoint": "installed-client",
+      "runsOn": [],
+      "dependsOnServers": ["db-server-a"],
+      "dependsOnApplications": [],
+      "notes": "Desktop client that talks directly to the shared database server and does not need a separate app-server tier."
+    },
+    {
+      "id": "static-page-c",
+      "name": "Static Page C",
+      "kind": "static-site",
+      "entrypoint": "https://status.example.invalid",
+      "runsOn": ["static-web-c"],
+      "dependsOnServers": [],
+      "dependsOnApplications": [],
+      "notes": "Static content served directly from a small Linux VM."
+    }
+  ],
+  "relations": [
+    {
+      "from": "cloud-edge-appliance",
+      "to": "app-server-a",
+      "type": "publishes-to"
+    },
+    {
+      "from": "eshop-app-a",
+      "to": "db-server-a",
+      "type": "reads-writes"
+    },
+    {
+      "from": "desktop-app-b",
+      "to": "db-server-a",
+      "type": "reads-writes"
+    },
+    {
+      "from": "static-page-c",
+      "to": "static-web-c",
+      "type": "served-from"
+    }
+  ]
+}

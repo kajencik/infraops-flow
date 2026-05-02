@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "checks": [
+    {
+      "id": "core-lan-check",
+      "cadence": "twice weekly",
+      "description": "Confirm edge-router, mini-pc-1, nas-1, and ap-1 are reachable and still match the documented environment."
+    },
+    {
+      "id": "cloud-terraform-review",
+      "cadence": "weekly or before changes",
+      "description": "Review the current cloud utility-node direction against asset inventory, recent monitoring evidence, and the current Terraform stack inputs or plan output before making changes."
+    },
+    {
+      "id": "cloud-cost-check-example",
+      "cadence": "weekly or after topology changes",
+      "description": "Run the generic cloud-cost check against the current modeled resource profile so cost assumptions stay visible alongside Terraform and monitoring evidence."
+    },
+    {
+      "id": "network-audit-example",
+      "cadence": "daily or after changes",
+      "description": "Run the config-driven network-audit example to confirm core host reachability and capture a small JSON snapshot before drift turns into guesswork."
+    },
+    {
+      "id": "host-health",
+      "cadence": "weekly",
+      "description": "Collect a read-only health snapshot from ops-laptop before small problems become a full evening project."
+    },
+    {
+      "id": "backup-target-review",
+      "cadence": "weekly",
+      "description": "Check that current backups and exported configs are landing on nas-1 rather than on whichever machine happened to be convenient last month."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+#cloud-config
+package_update: true
+package_upgrade: false
+
+write_files:
+  - path: /etc/motd
+    permissions: "0644"
+    content: |
+      This is a generic cloud utility-node bootstrap example.
+      Replace this template with your real provider- and distro-specific bootstrap logic.
+
+runcmd:
+  - echo "bootstrap placeholder for wireguard-capable utility node"
+  - echo "install packages, render config, and start services in the private repo version"

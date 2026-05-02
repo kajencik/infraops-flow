@@ -1,0 +1,44 @@
+{
+  "_comment": "Schema example for a project mind-map companion file. Copy, rename to <project-id>.mind-map.json, and fill in real values. These files give the AI a structured, small read path into any project without loading the full Markdown note.",
+  "schemaVersion": 1,
+  "projectId": "your-project-id",
+  "projectTitle": "Your Project Title",
+  "sourceNote": "notes/projects/your-project-id.md",
+  "lastUpdated": "YYYY-MM-DD",
+  "status": "active",
+  "currentFocus": "One sentence: what are you doing right now on this project?",
+  "goal": "One sentence: what does done look like for this project?",
+  "keyFacts": [
+    "Verified fact 1 — something you confirmed is true.",
+    "Verified fact 2 — something you confirmed is true.",
+    "Open question 1 — something you still need to check."
+  ],
+  "branches": [
+    {
+      "id": "current-state",
+      "label": "Current State",
+      "summary": "What is verified about the current environment or setup.",
+      "keyItems": [
+        "Item 1",
+        "Item 2"
+      ]
+    },
+    {
+      "id": "next-actions",
+      "label": "Next Actions",
+      "summary": "Concrete next steps the operator should take.",
+      "keyItems": [
+        "Step 1",
+        "Step 2"
+      ]
+    },
+    {
+      "id": "rollback",
+      "label": "Rollback / Recovery",
+      "summary": "How to undo or recover if something goes wrong.",
+      "keyItems": [
+        "Rollback step 1"
+      ]
+    }
+  ]
+}
