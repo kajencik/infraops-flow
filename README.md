@@ -66,6 +66,7 @@ Codex Hermes is the version after that operator got tired of operating by folklo
 - `inventory/` — the cast list for the sample environment: hosts, networks, shares, and the other named troublemakers
 - `applications/` — service and application documentation: what runs, where, and what it depends on
 - `data/` — recurring checks and project indexes; also holds the knowledge-graph orientation files (`knowledge-graph-top-dashboard.example.json` and `knowledge-graph-overview.example.json`) that the AI loads first at session start to avoid opening long files unnecessarily
+
 - `notes/` — session continuity, project notes, and the paper trail of how the environment became more legible
 - `scripts/` — small tools for read-heavy operational work and carefully explicit write actions
 - `sessions/` — personal session history for each contributor; shared layers cover the environment, session files cover the person
@@ -99,6 +100,7 @@ If you want the shortest path to understanding the repo, follow this order:
 9. `scripts/network-audit-example.ps1`
 
 That path shows the real point of the repo: orient fast with the knowledge-graph files, then work through inventory, recurring checks, active work, session continuity, and a few small tools to separate signal from noise.
+
 
 ## Scope
 

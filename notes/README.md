@@ -14,6 +14,7 @@ Suggested flow:
 4. Track ongoing work in `notes/projects/`.
 5. Use dated session notes when the work is real enough that memory alone should no longer be trusted.
 
+
 The notes are where weak intuitions become known state, and where long messy tasks start turning into shorter, more scriptable ones.
 
 Current reusable note:

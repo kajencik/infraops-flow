@@ -42,3 +42,4 @@ The dashboard file is maintained manually (or by a small script in your instance
 Once the JSON structure is stable and the file volume grows enough that raw file reads become noisy, an MCP (Model Context Protocol) server can wrap these same files with typed tool calls — returning only the ranked project array instead of the full index, or joining project metadata with session evidence on demand.
 
 That is a follow-up step, not a starting requirement. The JSON files are the product; an MCP server is one possible query interface over them.
+
