@@ -22,3 +22,9 @@ Current scripts:
 - `host-health.ps1` collects a read-only Windows host snapshot without assuming anything about the rest of the environment.
 - `network-audit-example.ps1` shows a small config-driven reachability check with optional JSON snapshot and history output.
 - `cloud-cost-check-example.ps1` shows a small config-driven monthly cloud-cost review for generic utility-node and network-appliance planning.
+- `sync-repo-rename-workspace.ps1` builds a portable rename/workspace bundle under a sync directory so other machines can align repo folder names and `.code-workspace` paths after a repository rename; the bundle now includes `scripts/apply-repo-rename-workspace.ps1` for direct execution on target machines.
+- `apply-repo-rename-workspace.ps1` consumes a generated bundle and can automatically rename repo folders, update local workspace files, and rewrite git origin URLs to the new repo slug (dry-run by default; use `-Execute` to apply).
+
+Related runbook example:
+
+- `notes/projects/repo-rename-and-workspace-sync.md` documents the full source-machine to target-machine rename workflow with dry-run, execute, and rollback guidance.

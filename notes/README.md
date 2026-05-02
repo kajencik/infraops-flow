@@ -22,6 +22,7 @@ Current reusable note:
 - `notes/projects/change-management-and-risky-ops.md` captures a general cutover/rollback method for risky infrastructure work.
 - `notes/projects/observability-and-automation.md` captures the model for recurring checks, structured evidence, and approval-gated follow-up.
 - `notes/projects/cloud-and-terraform-operations.md` captures the cloud/IaC direction where asset state, monitoring evidence, and Terraform intent stay usable together for the assistant.
+- `notes/projects/repo-rename-and-workspace-sync.md` captures a practical multi-machine runbook for repository rename alignment (folder names, workspace files, and git remotes).
 
 Current example sessions:
 
